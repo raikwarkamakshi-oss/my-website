@@ -115,16 +115,26 @@ body {
     letter-spacing: 8px;
 }
 
-.back {
-    display: block;
-    width: fit-content;
-    margin: 35px auto 0;
-    padding: 11px 24px;
+.buttons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    margin: 7px;
+    padding: 11px 22px;
     border: 1px solid #76563e;
     color: #4b3324;
     text-decoration: none;
     background: #ead8bd;
     font-family: Georgia, serif;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #d7bd99;
+    transform: scale(1.05);
 }
 
 </style>
@@ -222,9 +232,17 @@ body {
 
     </div>
 
-    <a class="back" href="index.html">
-        ← Back
-    </a>
+    <div class="buttons">
+
+        <a class="button" href="memories.html">
+            Our Memories ♡
+        </a>
+
+        <a class="button" href="index.html">
+            ← Home
+        </a>
+
+    </div>
 
 </div>
 
