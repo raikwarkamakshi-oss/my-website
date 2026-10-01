@@ -74,8 +74,6 @@ h1 {
     margin: 0 auto 35px;
 }
 
-/* PHOTO GRID */
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -103,8 +101,6 @@ h1 {
     display: block;
 }
 
-/* CAPTIONS */
-
 .caption {
     text-align: center;
     margin-top: 12px;
@@ -113,8 +109,6 @@ h1 {
     line-height: 1.5;
 }
 
-/* LITTLE DECORATION */
-
 .doodle {
     text-align: center;
     font-size: 22px;
@@ -122,13 +116,15 @@ h1 {
     letter-spacing: 7px;
 }
 
-/* BACK BUTTON */
+.buttons {
+    text-align: center;
+    margin-top: 35px;
+}
 
-.back {
-    display: block;
-    width: fit-content;
-    margin: 40px auto 0;
-    padding: 11px 25px;
+.button {
+    display: inline-block;
+    margin: 7px;
+    padding: 11px 23px;
     border: 1px solid #76563e;
     color: #4b3324;
     text-decoration: none;
@@ -137,12 +133,10 @@ h1 {
     transition: 0.3s;
 }
 
-.back:hover {
+.button:hover {
     background: #d7bd99;
     transform: scale(1.05);
 }
-
-/* MOBILE */
 
 @media (max-width: 600px) {
 
@@ -180,132 +174,24 @@ h1 {
 
     <div class="gallery">
 
-
         <div class="photo-card">
-
-            <img
-                src="file_000000009bfc720b9b9c5922115741aa.png"
-                alt="Memory 1"
-            >
-
+            <img src="file_000000009bfc720b9b9c5922115741aa.png" alt="Memory 1">
             <div class="caption">
                 one of my favourite moments ♡
             </div>
-
         </div>
 
 
         <div class="photo-card">
-
-            <img
-                src="Snapchat-742070198.jpg"
-                alt="Memory 2"
-            >
-
+            <img src="Snapchat-742070198.jpg" alt="Memory 2">
             <div class="caption">
                 us being us ♡
             </div>
-
         </div>
 
 
         <div class="photo-card">
-
-            <img
-                src="Snapchat-1716547566.jpg"
-                alt="Memory 3"
-            >
-
+            <img src="Snapchat-1716547566.jpg" alt="Memory 3">
             <div class="caption">
                 a little moment to remember ✦
-            </div>
-
-        </div>
-
-
-        <div class="photo-card">
-
-            <img
-                src="Screenshot_2026_0916_144246.jpg"
-                alt="Memory 4"
-            >
-
-            <div class="caption">
-                this one has a special place in my heart ♡
-            </div>
-
-        </div>
-
-
-        <div class="photo-card">
-
-            <img
-                src="Screenshot_2026_0717_163529.jpg"
-                alt="Memory 5"
-            >
-
-            <div class="caption">
-                another little memory ♡
-            </div>
-
-        </div>
-
-
-        <div class="photo-card">
-
-            <img
-                src="Picsart_26-06-05_00-48-40-569.jpg"
-                alt="Memory 6"
-            >
-
-            <div class="caption">
-                keeping this moment forever ✦
-            </div>
-
-        </div>
-
-
-        <div class="photo-card">
-
-            <img
-                src="IMG_20260320_194757_982.jpg"
-                alt="Memory 7"
-            >
-
-            <div class="caption">
-                one more for our little scrapbook ♡
-            </div>
-
-        </div>
-
-
-        <div class="photo-card">
-
-            <img
-                src="IMG_20260320_194750_488.jpg"
-                alt="Memory 8"
-            >
-
-            <div class="caption">
-                and this one too ♡
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-    <div class="doodle">
-        ♡ ✦ ♡ ✦ ♡
-    </div>
-
-
-    <a class="back" href="letter.html">
-        ← Back to Letter
-    </a>
-
-</div>
-
-</body>
-</html>
+            </
