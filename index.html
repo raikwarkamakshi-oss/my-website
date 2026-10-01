@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -7,6 +7,7 @@
 <title>A Little Something ♡</title>
 
 <style>
+
 * {
     box-sizing: border-box;
 }
@@ -36,6 +37,7 @@ body {
     box-shadow: 0 12px 30px rgba(60, 35, 20, 0.25);
     transform: rotate(-1deg);
     position: relative;
+    overflow: hidden;
 }
 
 .paper::before {
@@ -75,20 +77,25 @@ h1 {
     margin: 20px auto;
 }
 
+/* PHOTO */
+
 .photo {
-    width: 85%;
-    max-width: 350px;
+    display: block;
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    margin: 25px auto;
     padding: 10px;
     background: #fffaf0;
-    box-shadow: 0 6px 18px rgba(60, 35, 20, 0.25);
+    border: 1px solid #d8c4a8;
+    box-shadow: 0 8px 18px rgba(60, 35, 20, 0.25);
     transform: rotate(2deg);
-    margin: 15px auto 25px;
-    display: block;
 }
 
 p {
     font-size: 18px;
     line-height: 1.8;
+    margin-top: 25px;
 }
 
 .open {
@@ -107,6 +114,7 @@ p {
     background: #d7bd99;
     transform: scale(1.05);
 }
+
 </style>
 </head>
 
@@ -114,20 +122,30 @@ p {
 
 <div class="paper">
 
-    <div class="small">a little corner of the internet</div>
+    <div class="small">
+        a little corner of the internet
+    </div>
 
-    <h1>For You ♡</h1>
+    <h1>
+        For You ♡
+    </h1>
 
     <div class="line"></div>
 
-    <img class="photo" src="IMG_20260320_194750_488.jpg" alt="Our photo">
+    <img
+        class="photo"
+        src="IMG_20260320_194750_488.jpg"
+        alt="Our photo"
+    >
 
     <p>
         Some things are better<br>
         kept in little pieces of paper.
     </p>
 
-    <a class="open" href="#letter">Open ♡</a>
+    <a class="open" href="#letter">
+        Open ♡
+    </a>
 
 </div>
 
