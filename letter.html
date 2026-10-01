@@ -15,7 +15,11 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: #c9ad89;
+    background:
+        radial-gradient(circle at 15% 20%, #ead8bd 0 2px, transparent 3px),
+        radial-gradient(circle at 80% 70%, #ead8bd 0 2px, transparent 3px),
+        #c9ad89;
+    background-size: 38px 38px;
     font-family: Georgia, serif;
     color: #4b3324;
     display: flex;
@@ -26,41 +30,102 @@ body {
 
 .paper {
     width: 100%;
-    max-width: 520px;
-    min-height: 650px;
+    max-width: 560px;
     background: #f7edda;
-    padding: 50px 30px;
-    text-align: center;
+    padding: 45px 30px 50px;
     box-shadow: 0 12px 30px rgba(60, 35, 20, 0.25);
     transform: rotate(-1deg);
+    position: relative;
 }
 
-h1 {
-    font-size: 38px;
+.paper::before {
+    content: "♡  ✦  ♡";
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 18px;
+}
+
+.paper::after {
+    content: "✦  ♡";
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 18px;
+}
+
+.date {
+    text-align: right;
+    font-size: 13px;
+    letter-spacing: 1px;
+    opacity: 0.65;
+    margin-bottom: 25px;
+}
+
+.title {
+    text-align: center;
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
+    font-size: 34px;
     font-weight: normal;
-    margin-bottom: 30px;
+    margin: 5px 0 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 2px;
+    opacity: 0.65;
+    margin-bottom: 25px;
 }
 
 .line {
-    width: 100px;
+    width: 90px;
     height: 1px;
     background: #8b6a4e;
-    margin: 20px auto 30px;
+    margin: 0 auto 30px;
 }
 
-p {
-    font-size: 18px;
+.letter {
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
+    font-size: 16px;
     line-height: 1.9;
+    text-align: left;
+}
+
+.letter p {
+    margin: 0 0 20px;
+}
+
+.highlight {
+    text-align: center;
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.signature {
+    text-align: right;
+    font-family: "Segoe Print", "Comic Sans MS", cursive;
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+.doodle {
+    text-align: center;
+    font-size: 22px;
+    margin: 20px 0;
+    letter-spacing: 8px;
 }
 
 .back {
-    display: inline-block;
-    margin-top: 35px;
-    padding: 12px 25px;
+    display: block;
+    width: fit-content;
+    margin: 35px auto 0;
+    padding: 11px 24px;
     border: 1px solid #76563e;
     color: #4b3324;
     text-decoration: none;
     background: #ead8bd;
+    font-family: Georgia, serif;
 }
 
 </style>
@@ -70,21 +135,63 @@ p {
 
 <div class="paper">
 
-    <h1>A Little Letter ♡</h1>
+    <div class="date">
+        written with love ♡
+    </div>
+
+    <h1 class="title">
+        A Little Letter ♡
+    </h1>
+
+    <div class="subtitle">
+        just for you
+    </div>
 
     <div class="line"></div>
 
-    <p>
-        This little corner is just for you.
-        <br><br>
-        More memories are waiting here...
-    </p>
+    <div class="letter">
 
-    <a class="back" href="index.html">
-        ← Back
-    </a>
+        <p>
+            I don't even know how to express all of this properly… 🥹🤎
+            But you are genuinely <b>so special to me.</b> ♡
+        </p>
 
-</div>
+        <p>
+            Maine kabhi socha bhi nahi tha ki main kisi se itni attach
+            ho jaungi… ki legit kisi se itna pyaar karne lagungi. 🫠❤️
+        </p>
 
-</body>
-</html>
+        <p>
+            Mere dost mujhe bolte rehte hain,
+            <i>“Bhaiii tu aisi kab se ho gayi? Humne tujhe kabhi
+            itni lover girl imagine hi nahi kiya tha.”</i> 😭😂
+        </p>
+
+        <div class="doodle">
+            ♡ ✦ ♡
+        </div>
+
+        <p>
+            But kya kar sakte hain…
+            <b>mere baby mein hi kuch jaadu hai.</b> 🥹🫶🏻✨
+        </p>
+
+        <p>
+            Aap ho toh sab kuch thoda zyada special lagta hai.
+            And honestly, I don't even know how to imagine my days
+            without you anymore. 🫂🤎
+        </p>
+
+        <p>
+            I never want to lose what we have. 🥺
+            I just want to keep making more memories with you,
+            keep laughing with you, keep annoying you, and keep
+            having all these stupid little conversations that somehow
+            become my favourite part of the day. 😭❤️
+        </p>
+
+        <p>
+            Aapko shayad idea bhi nahi hai ki aap mere liye
+            <b>kitne important ho.</b> 🫶🏻
+            And no matter how badly I fail at expressing it sometimes,
+            just know that <b>
