@@ -18,19 +18,37 @@ body {
     min-height: 100vh;
     background:
         radial-gradient(circle at 20% 20%, #ead8bd 0 2px, transparent 3px),
+        radial-gradient(circle at 80% 70%, #ead8bd 0 2px, transparent 3px),
         #c9ad89;
     background-size: 38px 38px;
     font-family: Georgia, serif;
     color: #4b3324;
-    padding: 30px 20px;
+    padding: 30px 18px;
 }
 
 .page {
     max-width: 900px;
     margin: auto;
     background: #f7edda;
-    padding: 40px 25px 50px;
+    padding: 45px 22px 55px;
     box-shadow: 0 12px 30px rgba(60, 35, 20, 0.25);
+    position: relative;
+}
+
+.page::before {
+    content: "♡  ✦  ♡";
+    position: absolute;
+    top: 15px;
+    left: 18px;
+    font-size: 18px;
+}
+
+.page::after {
+    content: "✦  ♡";
+    position: absolute;
+    bottom: 15px;
+    right: 18px;
+    font-size: 18px;
 }
 
 h1 {
@@ -43,10 +61,10 @@ h1 {
 
 .subtitle {
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 2px;
     opacity: 0.7;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .line {
@@ -56,10 +74,13 @@ h1 {
     margin: 0 auto 35px;
 }
 
+/* PHOTO GRID */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 30px 22px;
+    align-items: start;
 }
 
 .photo-card {
@@ -78,35 +99,64 @@ h1 {
 
 .photo-card img {
     width: 100%;
+    height: auto;
     display: block;
 }
+
+/* CAPTIONS */
 
 .caption {
     text-align: center;
     margin-top: 12px;
     font-family: "Segoe Print", "Comic Sans MS", cursive;
     font-size: 14px;
+    line-height: 1.5;
 }
+
+/* LITTLE DECORATION */
+
+.doodle {
+    text-align: center;
+    font-size: 22px;
+    margin: 35px 0 5px;
+    letter-spacing: 7px;
+}
+
+/* BACK BUTTON */
 
 .back {
     display: block;
     width: fit-content;
     margin: 40px auto 0;
-    padding: 11px 24px;
+    padding: 11px 25px;
     border: 1px solid #76563e;
     color: #4b3324;
     text-decoration: none;
     background: #ead8bd;
+    font-family: Georgia, serif;
+    transition: 0.3s;
 }
+
+.back:hover {
+    background: #d7bd99;
+    transform: scale(1.05);
+}
+
+/* MOBILE */
 
 @media (max-width: 600px) {
 
     .gallery {
         grid-template-columns: 1fr;
+        gap: 35px;
     }
 
     h1 {
         font-size: 32px;
+    }
+
+    .page {
+        padding: 40px 18px 50px;
     }
 
 }
@@ -127,29 +177,129 @@ h1 {
 
     <div class="line"></div>
 
+
     <div class="gallery">
 
-        <div class="photo-card">
-            <img src="PHOTO1.jpg" alt="Memory 1">
-            <div class="caption">one of my favourite moments ♡</div>
-        </div>
 
         <div class="photo-card">
-            <img src="PHOTO2.jpg" alt="Memory 2">
-            <div class="caption">us being us ♡</div>
+
+            <img
+                src="file_000000009bfc720b9b9c5922115741aa.png"
+                alt="Memory 1"
+            >
+
+            <div class="caption">
+                one of my favourite moments ♡
+            </div>
+
         </div>
 
-        <div class="photo-card">
-            <img src="PHOTO3.jpg" alt="Memory 3">
-            <div class="caption">a little moment to remember ✦</div>
-        </div>
 
         <div class="photo-card">
-            <img src="PHOTO4.jpg" alt="Memory 4">
-            <div class="caption">forever keeping this one ♡</div>
+
+            <img
+                src="Snapchat-742070198.jpg"
+                alt="Memory 2"
+            >
+
+            <div class="caption">
+                us being us ♡
+            </div>
+
         </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="Snapchat-1716547566.jpg"
+                alt="Memory 3"
+            >
+
+            <div class="caption">
+                a little moment to remember ✦
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="Screenshot_2026_0916_144246.jpg"
+                alt="Memory 4"
+            >
+
+            <div class="caption">
+                this one has a special place in my heart ♡
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="Screenshot_2026_0717_163529.jpg"
+                alt="Memory 5"
+            >
+
+            <div class="caption">
+                another little memory ♡
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="Picsart_26-06-05_00-48-40-569.jpg"
+                alt="Memory 6"
+            >
+
+            <div class="caption">
+                keeping this moment forever ✦
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="IMG_20260320_194757_982.jpg"
+                alt="Memory 7"
+            >
+
+            <div class="caption">
+                one more for our little scrapbook ♡
+            </div>
+
+        </div>
+
+
+        <div class="photo-card">
+
+            <img
+                src="IMG_20260320_194750_488.jpg"
+                alt="Memory 8"
+            >
+
+            <div class="caption">
+                and this one too ♡
+            </div>
+
+        </div>
+
 
     </div>
+
+
+    <div class="doodle">
+        ♡ ✦ ♡ ✦ ♡
+    </div>
+
 
     <a class="back" href="letter.html">
         ← Back to Letter
